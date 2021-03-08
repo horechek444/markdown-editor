@@ -1,19 +1,20 @@
-import React from 'react';
-import marked from "marked";
-import './App.css';
+import React from "react";
+import TextField from "../TextField/TextField";
+import PreviewField from "../PreviewField/PreviewField";
+import "./App.css";
 
 const App = () => {
-  const [markDown, setMarkDown] = React.useState("#sup");
+  const [markdown, setMarkdown] = React.useState("# Заголовок");
 
   const handleChange = (event) => {
-    setMarkDown(event.target.value);
+    setMarkdown(event.target.value);
   }
 
   return (
     <div className="app">
-      <textarea onChange={handleChange} value={markDown} />
+      <TextField markdown={markdown} handleChange={handleChange}/>
 
-      <div className="preview">{marked(markDown)}</div>
+      <PreviewField markdown={markdown} />
     </div>
   );
 };

@@ -6,7 +6,8 @@ const TextField = ({markdown, handleChange}) => {
     <textarea
       className="text-field"
       onChange={handleChange}
-      value={markdown} />
+      value={markdown}
+    />
   );
 };
 

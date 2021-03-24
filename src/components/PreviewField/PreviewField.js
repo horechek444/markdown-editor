@@ -5,7 +5,8 @@ const PreviewField = ({markdown}) => {
   return (
     <ReactMarkdown
       className="preview"
-      source={markdown} />
+      source={markdown}
+    />
   );
 };
 

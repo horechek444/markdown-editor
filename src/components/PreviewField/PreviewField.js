@@ -3,7 +3,9 @@ import ReactMarkdown from "react-markdown";
 
 const PreviewField = ({markdown}) => {
   return (
-    <ReactMarkdown className="preview" source={markdown} />
+    <ReactMarkdown
+      className="preview"
+      source={markdown} />
   );
 };
 

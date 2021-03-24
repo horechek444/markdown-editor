@@ -12,9 +12,14 @@ const App = () => {
 
   return (
     <div className="app">
-      <TextField markdown={markdown} handleChange={handleChange}/>
+      <TextField
+        markdown={markdown}
+        handleChange={handleChange}
+      />
 
-      <PreviewField markdown={markdown} />
+      <PreviewField
+        markdown={markdown}
+      />
     </div>
   );
 };

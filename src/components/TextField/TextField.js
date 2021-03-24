@@ -3,7 +3,10 @@ import "./TextField.css";
 
 const TextField = ({markdown, handleChange}) => {
   return (
-    <textarea className="text-field" onChange={handleChange} value={markdown} />
+    <textarea
+      className="text-field"
+      onChange={handleChange}
+      value={markdown} />
   );
 };
 
